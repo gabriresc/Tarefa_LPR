@@ -1,6 +1,6 @@
 ﻿int classe;
 
-Console.WriteLine("Escolha sua classe:1-Guerreiro\n2-Mago\n3-Arqueira");
+Console.WriteLine("Escolha sua classe:\n1-Guerreiro\n2-Mago\n3-Arqueira");
 classe = int.Parse(Console.ReadLine());
 
 switch(classe){
