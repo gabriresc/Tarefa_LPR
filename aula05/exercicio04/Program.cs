@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Qua o numero?");
+﻿Console.WriteLine("Qual o numero?");
 int numero = Int32.Parse(Console.ReadLine());
 int numerodobrado = numero * numero;
 int soma = 0;
