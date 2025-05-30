@@ -142,6 +142,7 @@ static void menuPrincipal()
                         Console.WriteLine("||Deseja voltar para o menu?\n||1 - Sim || 0 - Não ||");
                         Console.Write("||->");
                         sair = int.Parse(Console.ReadLine());
+                        somatotal=0;
                     }while(sair==0);{
                         Console.Clear();
                         break;
