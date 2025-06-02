@@ -9,16 +9,16 @@ int main(){
     int numeros_impar = 0;
     for(int i =0;i<numeros.size();i++)
     {
-        int no_cu=0;
+        int valor=0;
         cout<<"Digite o "<<(i+1)<<" numero"<<endl;
-        cin>>no_cu;
-        if(no_cu%2 == 0)
+        cin>>valor;
+        if(valor%2 == 0)
         {
             numeros_par++;
         }else{
             numeros_impar++;
         }
-        numeros[i] = no_cu;
+        numeros[i] = valor;
     }
     vector<int>par(numeros_par);
     vector<int>impar(numeros_impar);
