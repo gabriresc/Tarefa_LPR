@@ -1,28 +1,18 @@
 ﻿void main()
 {
-    int[,] matrizA = new int[3, 3];
-    int[,] matrizB = new int[3, 3];
+    int[,] matrizA = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+    int[,] matrizB = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
     int[,] matrizfinal = new int[3, 3];
-    Console.WriteLine("Para a matriz A");
-    for (int i = 0; i < matrizA.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrizA.GetLength(1); j++)
-        {
-            Console.WriteLine("Digite o valor que quer atribuir na linha " + (i + 1) + " e coluna" + (j + 1));
-            matrizA[i, j] = Convert.ToInt32(Console.ReadLine());
+    
+    for (int row = 0; row < 3; row++) {
+        for (int col = 0; col < 3; col++) {
+            // Multiply the row of A by the column of B to get the row, column of product.
+            for (int inner = 0; inner < 3; inner++) {
+                matrizfinal[row, col] += matrizA[row, inner] * matrizB[inner, col];
+            }
+            Console.Write(matrizfinal[row, col] + "  ");
         }
+        Console.WriteLine();
     }
-    Console.WriteLine("Para a matriz B");
-    for (int i = 0; i < matrizB.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrizB.GetLength(1); j++)
-        {
-            Console.WriteLine("Digite o valor que quer atribuir na linha " + (i + 1) + " e coluna" + (j + 1));
-            matrizB[i, j] = Convert.ToInt32(Console.ReadLine());
-        }
-    }
-    
-    
-    
 
 }
