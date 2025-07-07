@@ -17,6 +17,7 @@ int main()
 {
     cout<<"Digite as informações dos livros"<<endl;
     vector<Livros>vectorlivros(3);
+
     for(int i=0;i<3;i++){
         cout<<"Digite o titulo do livro "<<i+1<<":";
         cin>>vectorlivros[i].Titulo;
@@ -31,8 +32,8 @@ int main()
         cout<<""<<endl;
     }
     
-    double precototal;
-    double mediapaginas;
+    double precototal=0;
+    double mediapaginas=0;
 
     for(Livros x : vectorlivros)
     {

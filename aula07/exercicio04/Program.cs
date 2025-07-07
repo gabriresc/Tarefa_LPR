@@ -6,7 +6,7 @@
     
     for (int row = 0; row < 3; row++) {
         for (int col = 0; col < 3; col++) {
-            // Multiply the row of A by the column of B to get the row, column of product.
+            
             for (int inner = 0; inner < 3; inner++) {
                 matrizfinal[row, col] += matrizA[row, inner] * matrizB[inner, col];
             }
